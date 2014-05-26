@@ -10,6 +10,6 @@
 public interface Volador {
     //hola puto rafa HALA MADRID!!
     public abstract String despegar();
-    public abstract String aterrizar(int aterrizar);
+    public abstract String aterrizar(int metros);
     
 }
