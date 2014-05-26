@@ -28,12 +28,18 @@ public class Helipuerto {
     }
     
     String aterrizar(int helicoptero, int metros){
-        return "";
+        if(helicopteros.size()>helicoptero){
+            return helicopteros.get(helicoptero).aterrizar(metros);
+        }
+        else return "Ese helicoptero se a perdido";
     }
     
     String despegar(int helicoptero){
         
-        return "";
+       if(helicopteros.size()>helicoptero){
+           return helicopteros.get(helicoptero).despegar();
+       }
+       else return "Ese helicoptero se a perdido";
     }
     
 }
